@@ -36,13 +36,17 @@ class Settings(BaseSettings):
     NEO4J_PASSWORD: str = "medical123"
 
     # 模型
-    DASHSCOPE_API_KEY: str = ""
-       # 聊天模型
-    BASE_URL_CHAT: str = ""
+    # 聊天模型
+    DEEPSEEK_BASE_URL: str = ""
     DEEPSEEK_API_KEY: str = ""
+    DEEPSEEK_MODEL: str = "deepseek-chat"
     CHAT_MODEL: str = "deepseek-chat"
-    EMBEDDING_MODEL: str = "text-embedding-v3"
-    VL_MODEL: str = "qwen-vl"
+    # 嵌入模型
+    SILICONFLOW_API_KEY: str = ""
+    SILICONFLOW_BASE_URL: str = ""
+    EMBEDDING_MODEL: str = "BAAI/bge-m3"
+    RERANK_MODEL: str = "Pro/BAAI/bge-reranker-v2-m3"
+    VL_MODEL: str = "Qwen/Qwen3.8-27B"
 
     LOG_LEVEL: str = "DEBUG"
     LOG_DIR: str = "logs"
